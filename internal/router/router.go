@@ -20,6 +20,8 @@ func (r *Router) Listen() {
 
 	app := fiber.New(fiber.Config{Views: engine})
 
+	app.Static("/", "./views/user/")
+
 	app.Get("/", func(ctx *fiber.Ctx) error {
 		return ctx.Render("user/index", fiber.Map{})
 	})
