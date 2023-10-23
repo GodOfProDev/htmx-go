@@ -1,0 +1,55 @@
+@import url(https://fonts.bunny.net/css);
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container label, .login-container input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-container input[type="text"], .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input:required:invalid, textarea:required:invalid {
+    border: 2px solid #4000ff; /* Border color for invalid fields */
+    color: #0048ff; /* Text color for invalid fields */
+}
+
+/* Style the validation message */
+input:required:invalid::placeholder, textarea:required:invalid::placeholder {
+    color: #ff0000; /* Placeholder text color for invalid fields */
+}
